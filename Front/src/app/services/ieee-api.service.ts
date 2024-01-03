@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class IeeeApiService {
   API_URL = ' https://ieeexploreapi.ieee.org/api/v1/search/articles';
-  key = 'wd346uuddnfjcfd9uvtrp8a8';
+  key = 'you-api-key-here';
 
   constructor(private http: HttpClient) {}
 
