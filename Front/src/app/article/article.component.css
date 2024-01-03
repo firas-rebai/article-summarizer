@@ -1,0 +1,59 @@
+.scrollable-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Set your desired height */
+  width: 100%;
+}
+
+.scrollable-header {
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+  z-index: 1;
+}
+
+.scrollable-content {
+  display: flex;
+  flex: 1;
+}
+
+.scrollable-part {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.scrollable-paragraph {
+  /* Add a max-height or set a height for each paragraph */
+  max-height: 700px; /* Set your desired max-height */
+  overflow-y: auto;
+  margin-bottom: 15px; /* Add some space between paragraphs */
+
+
+}
+.loader-container{
+  margin-bottom: 15px;  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ff0000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }

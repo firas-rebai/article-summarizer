@@ -1,0 +1,26 @@
+<div class="scrollable-container">
+  <div class="scrollable-header">
+    <h2></h2>
+  </div>
+  <div class="scrollable-content">
+    <div class="scrollable-part">
+      <div class="scrollable-header">
+        <h2>Original Article</h2>
+      </div>
+      <div class="scrollable-paragraph">
+        <p [innerHTML]="html_content"></p>
+      </div>
+    </div>
+    <div class="scrollable-part">
+      <div class="scrollable-header">
+        <h2>Summary</h2>
+      </div>
+      <div class="scrollable-paragraph" *ngIf="html_summary_content">
+        <p [innerHTML]="html_summary_content"></p>
+      </div>
+      <div class="loader-container" *ngIf="!html_summary_content">
+        <span class="loader"></span>
+      </div>
+    </div>
+  </div>
+</div>

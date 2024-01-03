@@ -1,0 +1,16 @@
+<!-- <button (click)="fetch()">test api</button>
+ -->
+
+<div class="list-container" *ngIf="papers" >
+  <div class="search-container">
+    <input type="text" placeholder="Search articles..." ngModel="seachTerm" >
+  </div>
+  <div  *ngFor="let paper of papers">
+    <div class="article-item" (click)="to_article(paper.article_number)">
+      <h2>{{ paper.title }}</h2>
+      <br>
+      <h3>{{ paper.full_name }} Publisher : {{paper.publisher}} URL : {{paper.html_url}}</h3>
+    </div>
+  </div>
+</div>
+
